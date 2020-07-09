@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="nopCommerce">
+
+<listeners>
+<listener class-name="com.nopcommerce.utilities.Reporting" />
+</listeners>
+
+<test name="Test1">
+<parameter name="browser" value="chrome">
+<classes>
+<class name="com.nopcommerce.testCase.TC_LoginTest_0001"/>
+<!--  <class name="com.nopcommerce.testCase.TC_LoginDDT_0002"/>-->
+</classes>
+</parameter>
+</test>
+
+<!--  <test name="Test2">
+<parameter name="browser" value="firefox">
+<classes>
+<class name="com.nopcommerce.testCase.TC_LoginTest_0001"/>
+</classes>
+</parameter>
+</test>
+
+<test name="Test3">
+<parameter name="browser" value="ie">
+<classes>
+<class name="com.nopcommerce.testCase.TC_LoginTest_0001"/>
+</classes>
+</parameter>
+</test>  -->
+</suite>
